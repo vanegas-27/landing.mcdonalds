@@ -1,0 +1,91 @@
+---
+
+---
+
+
+
+<header>
+    <img src="../../public/img/mcdonalds.png" alt="">
+
+
+        <span class="material-symbols-outlined menHam">
+            menu
+        </span>
+        
+
+    <nav id="navBar">
+        <ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 10px 0px;
+    }
+
+    header img{
+        width: 40px;
+        margin-left: 20px;
+
+    }
+
+
+
+    header nav ul{
+
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+        
+
+        & li{
+            list-style: none;
+            padding: 2px 3px;
+            margin: 0px 10px;
+            color: var(--white);
+            font-weight: 500;
+            font-family: var(--txt1);
+            transition: all .30s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                border-bottom: 1px solid var(--white);
+            }
+        }
+    }
+
+    .menHam{
+        display: none;
+        color: var(--black);
+        cursor: pointer;
+        font-size: 2rem;
+        transition: transform .30s ease-in ;
+
+        &:hover{
+            color: var(--white);
+            transform: scale(1.1);
+        }
+    }
+
+
+    @media (width <= 720px){
+       .menHam{
+        display: block;
+       } 
+
+       nav{
+        display: none;
+       }
+
+    }
+</style>

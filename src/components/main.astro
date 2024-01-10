@@ -1,0 +1,93 @@
+---
+
+
+---
+
+<main>
+    <article>
+        <h1>MCDONALD'S</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, aperiam labore cum est voluptatem fugit dignissimos dolore reprehenderit dolores placeat soluta perspiciatis inventore, similique pariatur culpa atque! Sit, veritatis excepturi!</p>
+        <button>ORDER NOW</button>
+    </article>
+    <figure>
+        <img src="../../public/img/hamburguesa.png" >
+    </figure>
+</main>
+
+<style>
+main{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 40px;
+}
+
+main article{
+    width: 100%;
+    max-width: 500px;
+}
+
+main h1{
+    font-size: 3.7rem;
+    color: var(--white);
+    font-weight: 900;
+    font-family: var(--txt3);
+}
+
+main article p{
+    margin: .5em auto;
+    line-height: 20px;
+    color: var(--white);
+    width: 100%;
+}
+
+main article button{
+    background-color: var(--white);
+    color: var(--bgred);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+main figure {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 20px;
+
+    & img{
+        width: 100%;
+        max-width: 500px;
+        filter: drop-shadow(3px 3px 120px rgba(0, 0, 0, 0.87));
+    }
+}
+
+@media (width <= 720px){
+    main{
+        height: 90vh;
+        flex-direction: column-reverse;
+        
+    }
+
+    main figure{
+        overflow: hidden;
+
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+    main article{
+        
+    }
+
+    main article h1{
+        font-size: 2.7rem;
+    }
+}
+</style>
