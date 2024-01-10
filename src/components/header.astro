@@ -5,7 +5,7 @@
 
 
 <header>
-    <img src="../../public/img/mcdonalds.png" alt="">
+    <img src="../../img/mcdonalds.png" alt="">
 
 
         <span class="material-symbols-outlined menHam">
@@ -15,11 +15,11 @@
 
     <nav id="navBar">
         <ul>
-            <li>Home</li>
-            <li>Product</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><span class="resalt">H</span>ome</li>
+            <li><span class="resalt">P</span>roduct</li>
+            <li><span class="resalt">S</span>ervices</li>
+            <li><span class="resalt">A</span>bout</li>
+            <li><span class="resalt">C</span>ontact</li>
         </ul>
     </nav>
 </header>
@@ -40,6 +40,12 @@
     }
 
 
+    .resalt{
+        color: yellow;
+        font-family: var(--txt3);
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
 
     header nav ul{
 
@@ -57,9 +63,10 @@
             font-family: var(--txt1);
             transition: all .30s ease-in-out;
             cursor: pointer;
+            border-bottom: 2px solid transparent;
 
             &:hover{
-                border-bottom: 1px solid var(--white);
+                border-bottom: 2px solid var(--white);
             }
         }
     }
